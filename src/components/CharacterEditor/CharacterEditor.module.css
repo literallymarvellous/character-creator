@@ -3,11 +3,24 @@
   padding-bottom: 64px;
 }
 
+.bottomBackground {
+  position: absolute;
+  position: fixed;
+  background-color: hsl(195deg, 20%, 86%);
+  height: 40%;
+  top: 60%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .maxWidthWrapper {
+  position: relative;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +37,34 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  top: 20%;
+  left: 65%;
+  right: 0;
+  bottom: 0;
+  min-height: 500px;
 }
 
 .controlColumn {
+  width: 50%;
 }
+
+/* @media screen and (max-width: 450px) {
+  .header {
+    width: 100%;
+  }
+
+  .characterWrapper {
+    position: relative;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 500px;
+  }
+
+  .controlColumn {
+    position: fixed;
+    z-index: 2;
+  }
+} */
